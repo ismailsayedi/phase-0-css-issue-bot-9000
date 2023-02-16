@@ -43,7 +43,7 @@ describe("css/style.css", () => {
   it("corrects the '.completed' font-size declaration", () => {
     const rule = findRule(css.cssRules, ".completed");
     const hint = "Incorrect font-size property for .completed";
-    expect(rule.style["font-size"], hint).to.eq("12px");
+    expect(rule.style["font-size"], hint).to.eq("3em");
   });
 
   it("corrects the '#tasks .completed' background declaration", () => {
